@@ -43,10 +43,10 @@
       </div>
     </div>
     <div class="container">
-      <div class="copyright">
+      <!-- <div class="copyright">
         &copy; Copyright
         <strong>BizPage</strong>. All Rights Reserved
-      </div>
+      </div>-->
       <div class="credits">
         Designed by
         <a href="https://instagram.com/jeanmasvi">masvi</a>
@@ -60,4 +60,7 @@ export default {};
 </script>
 
 <style>
+.credits {
+  margin-top: 20px;
+}
 </style>

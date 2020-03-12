@@ -1,10 +1,11 @@
 <template>
   <header id="header" :class="[isActive ? 'header-scrolled' : 'header' ]">
     <div class="container-fluid">
-      <div id="logo" class="pull-left">
-        <h1>
+      <div id="logo" class="pull-left logo">
+        <img src="../../assets/img/11.png" class="img-log" alt />
+        <!-- <h1>
           <a href="#intro" class="scrollto">FCA</a>
-        </h1>
+        </h1>-->
       </div>
       <nav id="nav-menu-container">
         <ul class="nav-menu">
@@ -55,4 +56,14 @@ export default {
 
 <style>
 @import "../../assets/css/style.css";
+.img-log {
+  width: 100px;
+}
+.logo {
+  padding: 10px 0 0;
+  margin-top: -40px;
+}
+.header-scrolled {
+  padding-top: 23px !important;
+}
 </style>

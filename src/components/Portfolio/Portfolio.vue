@@ -36,26 +36,43 @@
           </div>
         </div>
       </div>
+      <!-- <pagination :pagination="meta.pagination" @page="changePage" /> -->
     </div>
   </section>
 </template>
 
 <script>
 import get from "axios";
-
+// import Pagination from "../Pagination/Pagination";
 export default {
+  components: {
+    // Pagination
+  },
   data() {
     return {
-      posts: []
+      postUrl:
+        "https://public-api.wordpress.com/rest/v1/sites/fluindocomoaguasystems.design.blog/posts",
+      posts: [],
+      postsData: {
+        per_page: 1,
+        page: 1,
+        number: 2
+      }
     };
   },
   methods: {
     fetchPosts() {
-      get(
-        "https://public-api.wordpress.com/rest/v1/sites/fluindocomoaguasystems.design.blog/posts"
-      ).then(res => {
-        this.posts = res.data.posts;
-      });
+      get(this.postUrl, { params: this.postsData })
+        .then(res => {
+          this.posts = res.data.posts;
+          console.log(res);
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    },
+    changePage({ page }) {
+      this.fetchPosts(page);
     }
   },
   created() {
