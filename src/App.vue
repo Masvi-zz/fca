@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <AppIndex />
+    <Header />
+    <router-view />
   </div>
 </template>
 
 <script>
-import AppIndex from "./components/AppIndex.vue";
-
+import Header from "./components/Header/Header";
 export default {
   name: "App",
   components: {
-    AppIndex
+    Header
   }
 };
 </script>

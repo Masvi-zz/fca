@@ -11,13 +11,22 @@
             </div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>We are professional</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+                <!-- <h2>Flua, curta e sinta a jornada</h2> -->
+                <p align="center">
+                  Nós, Fluindo como Água, queremos mostrar que o percurso a ser
+                  seguido na vida se assemelha ao curso da água em um rio, que as
+                  decisões que seguimos devem ser da mesma forma determinadas,
+                  que as mudanças em nossas vidas são como as transformações de
+                  estado da água e que nossas dificuldades e angústias podem
+                  parecer pesadas em um oceano mas podem também tornar-se
+                  leves e soltas ao evaporarem, com a orientação correta e muito autoconhecimento.
+                  Flua, curta e sinta a jornada, o destino é apenas uma consequência.
+                </p>
+                <!-- <a href="#featured-services" class="btn-get-started scrollto">Get Started</a> -->
               </div>
             </div>
           </div>
-
+          <!-- 
           <div class="carousel-item">
             <div class="carousel-background">
               <img src="img/intro-carousel/2.jpg" alt />
@@ -29,9 +38,9 @@
                 <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
               </div>
             </div>
-          </div>
+          </div>-->
 
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <div class="carousel-background">
               <img src="img/intro-carousel/3.jpg" alt />
             </div>
@@ -42,9 +51,9 @@
                 <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
               </div>
             </div>
-          </div>
+          </div>-->
 
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <div class="carousel-background">
               <img src="img/intro-carousel/4.jpg" alt />
             </div>
@@ -55,9 +64,9 @@
                 <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
               </div>
             </div>
-          </div>
+          </div>-->
 
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <div class="carousel-background">
               <img src="img/intro-carousel/5.jpg" alt />
             </div>
@@ -72,18 +81,18 @@
                 <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
               </div>
             </div>
-          </div>
+          </div>-->
         </div>
 
-        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+        <!-- <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
-        </a>
-
+        </a>-->
+        <!-- 
         <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-        </a>
+        </a>-->
       </div>
     </div>
   </section>

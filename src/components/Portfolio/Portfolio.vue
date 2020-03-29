@@ -12,6 +12,7 @@
           class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp"
         >
           <div class="portfolio-wrap">
+            <router-link :to="'/post/' +post.ID">TEste {{post.ID}}</router-link>
             <figure>
               <img :src="post.featured_image" class="img-fluid" alt />
               <a
@@ -54,9 +55,9 @@ export default {
         "https://public-api.wordpress.com/rest/v1/sites/fluindocomoaguasystems.design.blog/posts",
       posts: [],
       postsData: {
-        per_page: 1,
-        page: 1,
-        number: 2
+        per_page: 2,
+        page: null,
+        totalPages: ""
       }
     };
   },
