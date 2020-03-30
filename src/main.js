@@ -20,7 +20,9 @@ const router = new VueRouter({
       component: AppIndex
     },
     {
-      path: '/post:id',
+
+      path: '/post/:id',
+      name: 'post',
       component: Post
     }
   ]

@@ -12,7 +12,10 @@
           class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp"
         >
           <div class="portfolio-wrap">
-            <router-link :to="'/post/' +post.ID">TEste {{post.ID}}</router-link>
+            <!-- <router-link :to="{ name: 'post', params: { post: post} }">TESTE: {{post.ID}}</router-link> -->
+            <!-- <router-link :to="'/post/' +post.ID">TESTE: {{post.ID}}</router-link> -->
+            <router-link :to="{ path: '/post/'+ post.ID, params: {params: post } }">more..</router-link>
+            <!-- :to="'/post/' +post.ID">Teste {{post.ID}} -->
             <figure>
               <img :src="post.featured_image" class="img-fluid" alt />
               <a

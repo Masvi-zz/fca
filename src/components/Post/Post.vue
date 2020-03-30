@@ -49,7 +49,11 @@
 
 <script>
 export default {
-  components: {}
+  components: {},
+  created() {
+    console.log("post component");
+    console.log(this.$route.params);
+  }
 };
 </script>
 

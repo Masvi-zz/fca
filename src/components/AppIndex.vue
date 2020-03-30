@@ -1,5 +1,6 @@
 <template>
   <div id="fca">
+    <Header />
     <Carousel />
     <section id="featured-services">
       <div class="container">
@@ -48,7 +49,7 @@
 
 <script>
 import About from "./About/About";
-
+import Header from "./Header/Header";
 import Contact from "./Contact/Contact";
 import Carousel from "./Carousel/Carousel";
 import Portfolio from "./Portfolio/Portfolio";
@@ -58,6 +59,7 @@ export default {
   components: {
     About,
     Footer,
+    Header,
     Contact,
     Carousel,
     Portfolio,
