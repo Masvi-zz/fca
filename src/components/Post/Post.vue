@@ -6,38 +6,16 @@
           <div class="ibox">
             <div class="ibox-content">
               <div class="text-center article-title">
-                <span class="text-muted">
-                  <i class="fa fa-clock-o"></i> 28th Oct 2015
-                </span>
-                <h1>Behind the word mountains</h1>
+                <img class="img-fluid" :src="post.featured_image" alt />
+                <div class="date">
+                  <span class="text-muted">
+                    <i class="fa fa-clock-o"></i> 28th Oct 2015
+                  </span>
+                </div>
+                <h1>{{post.title}}</h1>
               </div>
-
-              <p align="justify">
-                One morning, when Gregor Samsa woke from troubled dreams, he found
-                himself transformed in his bed into a horrible vermin. He lay on his
-                armour-like back, and if he lifted his head a little he could see his
-                brown belly, slightly domed and divided by arches into stiff sections.
-                The bedding was hardly able to cover it and seemed ready to slide off any
-                moment. His many legs, pitifully thin compared with the size of the rest of
-                him, waved about helplessly as he looked. "What's happened to me?" he
-                thought. It wasn't a dream. His room, a proper human room although a
-                little too small, lay peacefully between its four familiar walls.
-                A collection of textile samples lay spread out on the table - Samsa was
-                a travelling salesman - and above it there hung a picture that he had
-                recently cut out of an illustrated magazine and housed in a nice, gilded
-                frame. It showed a lady fitted out with a fur hat and fur boa who sat upright
-                raising a heavy fur muff that covered the whole of her lower arm towards the
-                viewer. Gregor then turned to look out the window at the dull weather. Drops
-                The Big Oxmox advised her not to do so, because there were thousands
-                of bad Commas, wild Question Marks and devious Semikoli, but the Little
-                Blind Text didn’t listen. She packed her seven versalia, put her initial
-                into the belt and made herself on the way. When she reached the first hills
-                of the Italic Mountains, she had a last view back on the skyline of her
-                hometown Bookmarksgrove, the headline of Alphabet Village and the subline
-                of her own road, the Line Lane. Pityful a rethoric question ran over her
-                cheek,
-              </p>
-
+              <hr />
+              <div align="justify" v-html="post.content"></div>
               <hr />
             </div>
           </div>
@@ -48,11 +26,36 @@
 </template>
 
 <script>
+import get from "axios";
+
 export default {
   components: {},
+  data() {
+    return {
+      param: null,
+      post: {}
+    };
+  },
+  methods: {
+    fetchPost() {
+      let id = JSON.parse(JSON.stringify(this.param.id));
+      get(
+        "https://public-api.wordpress.com/rest/v1/sites/fluindocomoaguasystems.design.blog/posts/" +
+          id
+      )
+        .then(res => {
+          console.log("here...");
+          console.log(res);
+          this.post = res.data;
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    }
+  },
   created() {
-    console.log("post component");
-    console.log(this.$route.params);
+    this.param = this.$route.params;
+    this.fetchPost();
   }
 };
 </script>
@@ -94,5 +97,19 @@ export default {
   -ms-flex: 0 0 83.333333%;
   flex: 0 0 83.333333%;
   max-width: 83.333333%;
+}
+
+.img-fluid {
+  max-width: 30% !important;
+  height: auto !important;
+}
+
+.post-img {
+  height: 250px;
+  width: 100%;
+  display: block;
+}
+.date {
+  margin-top: 30px;
 }
 </style>
