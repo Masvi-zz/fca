@@ -2,10 +2,10 @@
   <header id="header" :class="[isActive ? 'header-scrolled' : 'header' ]">
     <div class="container-fluid">
       <div id="logo" class="pull-left logo">
-        <img src="../../assets/img/11.png" class="img-log" alt />
-        <!-- <h1>
+        <!-- <img src="../../assets/img/11.png" class="img-log" alt /> -->
+        <h1>
           <a href="#intro" class="scrollto">FCA</a>
-        </h1>-->
+        </h1>
       </div>
       <nav id="nav-menu-container">
         <ul class="nav-menu">

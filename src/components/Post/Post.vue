@@ -1,12 +1,13 @@
 <template>
   <div id="post">
+    <Header />
     <div class="wrapper wrapper-content animated fadeInRight article">
       <div class="row justify-content-md-center">
         <div class="col-lg-10">
           <div class="ibox">
             <div class="ibox-content">
               <div class="text-center article-title">
-                <img class="img-fluid" :src="post.featured_image" alt />
+                <img class="img img-responsive img-fluid" :src="post.featured_image" alt />
                 <div class="date">
                   <span class="text-muted">
                     <i class="fa fa-clock-o"></i> 28th Oct 2015
@@ -22,14 +23,20 @@
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import get from "axios";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 export default {
-  components: {},
+  components: {
+    Header,
+    Footer
+  },
   data() {
     return {
       param: null,
@@ -60,7 +67,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .inbox-content {
   background-color: #ffffff;
   color: inherit;
@@ -98,18 +105,18 @@ export default {
   flex: 0 0 83.333333%;
   max-width: 83.333333%;
 }
-
+/* 
 .img-fluid {
   max-width: 30% !important;
   height: auto !important;
+} */
+
+.img {
+  width: 100%;
+  max-width: 680px;
 }
 
-.post-img {
-  height: 250px;
-  width: 100%;
-  display: block;
-}
-.date {
-  margin-top: 30px;
+.wrapper-content {
+  padding: 20px 10px 40px;
 }
 </style>
