@@ -7,6 +7,13 @@ import VueRouter from 'vue-router';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "../src/lib/ionicons/css/ionicons.min.css"
 import "../src/lib/owlcarousel/assets/owl.carousel.css"
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import "font-awesome/css/font-awesome.css";
+library.add(faUserSecret)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 

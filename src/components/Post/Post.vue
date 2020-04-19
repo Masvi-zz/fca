@@ -3,14 +3,15 @@
     <Header />
     <div class="wrapper wrapper-content animated fadeInRight article">
       <div class="row justify-content-md-center">
-        <div class="col-lg-10">
+        <div class="col-lg-8">
           <div class="ibox">
             <div class="ibox-content">
               <div class="text-center article-title">
                 <img class="img img-responsive img-fluid" :src="post.featured_image" alt />
                 <div class="date">
                   <span class="text-muted">
-                    <i class="fa fa-clock-o"></i> 28th Oct 2015
+                    <i class="fa fa-clock-o"></i>
+                    {{ post.date | formatDate}}
                   </span>
                 </div>
                 <h1>{{post.title}}</h1>
@@ -31,6 +32,7 @@
 import get from "axios";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import moment from "moment";
 
 export default {
   components: {
@@ -42,6 +44,11 @@ export default {
       param: null,
       post: {}
     };
+  },
+  filters: {
+    formatDate(value) {
+      return moment(value).format(" DD/MM/YYYY, h:mm:ss");
+    }
   },
   methods: {
     fetchPost() {
@@ -110,13 +117,19 @@ export default {
   max-width: 30% !important;
   height: auto !important;
 } */
-
+/* 
 .img {
   width: 100%;
   max-width: 680px;
-}
+} */
 
 .wrapper-content {
   padding: 20px 10px 40px;
+}
+
+.wp-block-quote {
+  border-left-color: #897248;
+  margin: 32px 0;
+  padding-left: 16px;
 }
 </style>

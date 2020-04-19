@@ -7,12 +7,12 @@
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
             <div class="carousel-background">
-              <img src="../../assets/img/intro-carousel/3.jpg" alt />
+              <img src="../../assets/img/BANNER.png" alt />
             </div>
             <div class="carousel-container">
-              <div class="carousel-content">
+              <div>
                 <!-- <h2>Flua, curta e sinta a jornada</h2> -->
-                <p align="center">
+                <!-- <p align="center">
                   Nós, Fluindo como Água, queremos mostrar que o percurso a ser
                   seguido na vida se assemelha ao curso da água em um rio, que as
                   decisões que seguimos devem ser da mesma forma determinadas,
@@ -21,7 +21,7 @@
                   parecer pesadas em um oceano mas podem também tornar-se
                   leves e soltas ao evaporarem, com a orientação correta e muito autoconhecimento.
                   Flua, curta e sinta a jornada, o destino é apenas uma consequência.
-                </p>
+                </p>-->
                 <!-- <a href="#featured-services" class="btn-get-started scrollto">Get Started</a> -->
               </div>
             </div>

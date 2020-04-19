@@ -24,10 +24,9 @@
               <a href="#">Missão</a>
             </h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore
-              magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat.
+              Ser referência em conteúdo de qualidade sobre Inteligência Emocional,
+              orientando nossos leitores na busca de mais saúde mental, vital e
+              espiritual para contribuir com um mundo melhor, livre de ansiedade e depressão.
             </p>
           </div>
         </div>
@@ -43,10 +42,9 @@
               <a href="#">Valores</a>
             </h2>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium,
-              totam rem aperiam,
-              eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-              explicabo.
+              Transferir, trocar e compartilhar conhecimento de forma íntegra,
+              profunda e responsável na busca de uma atmosfera de respeito entre
+              as pessoas e um mundo melhor para futuras gerações.
             </p>
           </div>
         </div>
@@ -63,10 +61,10 @@
               <a href="#">Visão</a>
             </h2>
             <p>
-              Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores
-              eos qui ratione
-              voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-              amet.
+              Estar entre os conteúdos mais relevantes da internet sobre
+              Inteligência Emocional no Brasil até 2022, publicando e-books e
+              livros de forma a alcançar o maior número de leitores e audiência
+              possível no mesmo período.
             </p>
           </div>
         </div>
