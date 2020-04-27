@@ -39,7 +39,7 @@
     </section>
     <main id="main">
       <About />
-      <ServicesSection />
+
       <Portfolio />
       <Contact />
     </main>
@@ -53,7 +53,6 @@ import Header from "./Header/Header";
 import Contact from "./Contact/Contact";
 import Carousel from "./Carousel/Carousel";
 import Portfolio from "./Portfolio/Portfolio";
-import ServicesSection from "./ServicesSection/ServicesSection";
 import Footer from "./Footer/Footer";
 export default {
   components: {
@@ -62,8 +61,7 @@ export default {
     Header,
     Contact,
     Carousel,
-    Portfolio,
-    ServicesSection
+    Portfolio
   }
 };
 </script>

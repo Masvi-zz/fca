@@ -19,20 +19,21 @@
               Santa Maria, RS
               <br />Brasil
               <br />
-              <strong>Telefone:</strong> (55) xxxx xxxx
+              <strong>Telefone:</strong> (55) 99602-4055
               <br />
-              <strong>Email:</strong> fluindocomoagua@gmail.com
+              <strong>Email:</strong> contato@fluindocomoagua.com
               <br />
             </p>
             <div class="social-links">
-              <a href="#" class="facebook">
+              <a href="https://facebook.com/fluindocomoagua" target="_blank" class="facebook">
                 <i class="fa fa-facebook"></i>
               </a>
-              <a href="#" class="instagram">
+              <a
+                href="https://www.instagram.com/fluindocomoagua/"
+                target="_blank"
+                class="instagram"
+              >
                 <i class="fa fa-instagram"></i>
-              </a>
-              <a href="#" class="google-plus">
-                <i class="fa fa-google-plus"></i>
               </a>
               <a href="#" class="linkedin">
                 <i class="fa fa-linkedin"></i>
