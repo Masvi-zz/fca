@@ -3,7 +3,6 @@
     <div class="container">
       <div class="section-header">
         <h3>Contato</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
       </div>
       <div class="row contact-info">
         <div class="col-md-6">

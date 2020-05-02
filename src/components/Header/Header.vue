@@ -10,16 +10,16 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active">
-            <a href="#intro">Home</a>
+            <a href="#intro" @click="getMyCurrentRoute">Home</a>
           </li>
           <li>
-            <a href="#about">Sobre nós</a>
+            <a href="#about" @click="getMyCurrentRoute">Sobre nós</a>
           </li>
           <li>
-            <a href="#portfolio">Artigos</a>
+            <a @click="getMyCurrentRoute">Artigos</a>
           </li>
           <li>
-            <a href="#contact">Contato</a>
+            <a href="#contact" @click="getMyCurrentRoute">Contato</a>
           </li>
         </ul>
       </nav>
@@ -42,6 +42,16 @@ export default {
         this.isActive = true;
       } else if (scrollParam < 90) {
         this.isActive = false;
+      }
+    },
+    getMyCurrentRoute() {
+      console.log(window.location.hash);
+
+      history.pushState(null, null, " ");
+
+      console.log(window.location);
+      if (this.$router.currentRoute.path != "/") {
+        this.$router.push({ path: "/" });
       }
     }
   },

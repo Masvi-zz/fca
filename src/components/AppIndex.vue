@@ -2,7 +2,7 @@
   <div id="fca">
     <Header />
     <Carousel />
-    <section id="featured-services">
+    <!-- <section id="featured-services">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 box">
@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
     <main id="main">
       <About />
 

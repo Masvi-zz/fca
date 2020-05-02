@@ -50,7 +50,7 @@
       </div>-->
       <div class="credits">
         Designed by
-        <a href="https://instagram.com/jeanmasvi">masvi</a>
+        <a class="dev-contact" href="https://instagram.com/jeanmasvi">masvi</a>
       </div>
     </div>
   </footer>
@@ -60,8 +60,11 @@
 export default {};
 </script>
 
-<style>
+<style >
 .credits {
   margin-top: 20px;
+}
+.dev-contact {
+  color: darkgrey;
 }
 </style>

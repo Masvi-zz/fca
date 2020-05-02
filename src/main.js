@@ -1,6 +1,7 @@
 import App from './App.vue'
 import AppIndex from './components/AppIndex'
 import Post from './components/Post/Post'
+import Portfolio from './components/Portfolio/Portfolio'
 
 import Vue from 'vue'
 import VueRouter from 'vue-router';
@@ -23,7 +24,7 @@ Vue.use(VueRouter);
 const router = new VueRouter({
   routes: [
     {
-      path: '/index',
+      path: '/',
       component: AppIndex
     },
     {
@@ -31,7 +32,13 @@ const router = new VueRouter({
       path: '/post/:id',
       name: 'post',
       component: Post
-    }
+    },
+    {
+      path: '/portfolio',
+      name: 'portfolio',
+      component: Portfolio
+    },
+
   ]
 })
 

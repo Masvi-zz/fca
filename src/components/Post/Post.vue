@@ -3,7 +3,7 @@
     <Header />
     <div class="wrapper wrapper-content animated fadeInRight article">
       <div class="row justify-content-md-center">
-        <div class="col-lg-8">
+        <div class="col-lg-7">
           <div class="ibox">
             <div class="ibox-content">
               <div class="text-center article-title">
@@ -112,16 +112,6 @@ export default {
   flex: 0 0 83.333333%;
   max-width: 83.333333%;
 }
-/* 
-.img-fluid {
-  max-width: 30% !important;
-  height: auto !important;
-} */
-/* 
-.img {
-  width: 100%;
-  max-width: 680px;
-} */
 
 .wrapper-content {
   padding: 20px 10px 40px;
@@ -131,5 +121,8 @@ export default {
   border-left-color: #897248;
   margin: 32px 0;
   padding-left: 16px;
+}
+.date {
+  margin-bottom: 4%;
 }
 </style>
