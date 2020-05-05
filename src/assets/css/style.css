@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #18d26e;
+  color: #8bc3d3;
   transition: 0.5s;
 }
 
@@ -1474,7 +1474,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #18d26e;
+  color: #8bc3d3;
 }
 
 #footer .footer-top .footer-contact {
@@ -1507,7 +1507,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"]:hover {
-  background: #13a456;
+  background: #8bc3d3;
 }
 
 #footer .copyright {

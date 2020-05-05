@@ -5,13 +5,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 footer-info">
             <h3>Fluindo como água</h3>
-            <p>
-              Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-              valies
-              darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin
-              fermentum leo.
-              Amet volutpat consequat mauris nunc congue.
-            </p>
+            <p></p>
           </div>
           <div class="col-lg-6 col-md-6 footer-contact">
             <h4>Fale conosco</h4>
@@ -44,13 +38,17 @@
       </div>
     </div>
     <div class="container">
-      <!-- <div class="copyright">
+      <div class="copyright">
         &copy; Copyright
-        <strong>BizPage</strong>. All Rights Reserved
-      </div>-->
+        <strong>Fluindo Como Água</strong>. Todos os direitos reservados
+      </div>
       <div class="credits">
         Designed by
-        <a class="dev-contact" href="https://instagram.com/jeanmasvi">masvi</a>
+        <a
+          class="dev-contact"
+          target="_blank"
+          href="https://www.linkedin.com/in/jean-masvi-80071134/"
+        >masvi</a>
       </div>
     </div>
   </footer>

@@ -18,14 +18,14 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 
-
 Vue.use(VueRouter);
 
 const router = new VueRouter({
+  mode: 'history',
   routes: [
     {
       path: '/',
-      component: AppIndex
+      component: AppIndex,
     },
     {
 
@@ -36,7 +36,8 @@ const router = new VueRouter({
     {
       path: '/portfolio',
       name: 'portfolio',
-      component: Portfolio
+      component: Portfolio,
+
     },
 
   ]

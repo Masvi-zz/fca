@@ -73,4 +73,9 @@ export default {
   height: 90px;
   border-radius: 0 0 3px 3px;
 }
+
+/* .section-bg {
+  padding-top: 2%;
+  padding-bottom: 2%;
+} */
 </style>

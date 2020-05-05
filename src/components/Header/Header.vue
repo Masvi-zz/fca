@@ -16,7 +16,7 @@
             <a href="#about" @click="getMyCurrentRoute">Sobre nós</a>
           </li>
           <li>
-            <a @click="getMyCurrentRoute">Artigos</a>
+            <a href="#portfolio" @click="getMyCurrentRoute">Artigos</a>
           </li>
           <li>
             <a href="#contact" @click="getMyCurrentRoute">Contato</a>
@@ -45,11 +45,8 @@ export default {
       }
     },
     getMyCurrentRoute() {
-      console.log(window.location.hash);
+      console.log(this.$router.currentRoute);
 
-      history.pushState(null, null, " ");
-
-      console.log(window.location);
       if (this.$router.currentRoute.path != "/") {
         this.$router.push({ path: "/" });
       }
